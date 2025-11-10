@@ -1,5 +1,10 @@
+import torch
+from transformers.trainer import Trainer
+from transformers.training_args import TrainingArguments
 from .base_llm import BaseLLM
 from .data import Dataset, benchmark
+from peft import LoraConfig, get_peft_model, TaskType, PeftModel
+
 
 
 def load() -> BaseLLM:
@@ -49,7 +54,12 @@ def format_example(prompt: str, answer: str) -> dict[str, str]:
     """
     Construct a question / answer pair. Consider rounding the answer to make it easier for the LLM.
     """
-    raise NotImplementedError()
+    rounded_answer_str = f"{answer:g}" 
+    
+    return {
+        "question": prompt,
+        "answer": f"<answer>{rounded_answer_str}</answer>"
+    }
 
 
 class TokenizedDataset:
@@ -78,8 +88,61 @@ def train_model(
     output_dir: str,
     **kwargs,
 ):
-    raise NotImplementedError()
+    baseModel = BaseLLM()
+    config = LoraConfig(
+        r=8,
+        lora_alpha=32, # 4 * r
+        target_modules="all-linear",
+        bias="none", 
+        task_type=TaskType.CAUSAL_LM,
+    )
+
+    model = get_peft_model(baseModel.model, config)
+    # model.enable_input_require_grads()
+    # model.print_trainable_parameters()
+    # model.print_trainable_parameters()
+    
+    # if torch.cuda.is_available():
+    model.enable_input_require_grads()
+    
+    print("Trainable parameters:")
+    model.print_trainable_parameters()
+
+    train_data = Dataset("train")
+    tokenizer = baseModel.tokenizer
+
+    tokenized_train_data = TokenizedDataset(tokenizer, train_data, format_example)
+
+    training_args = TrainingArguments(
+        output_dir=output_dir,
+        logging_dir=output_dir,
+        report_to="tensorboard",
+        
+        per_device_train_batch_size=32, # Per instructions
+        num_train_epochs=5, # Per instructions
+        
+        learning_rate=2e-4, # Reasonable LR for LoRA
+        warmup_steps=100,
+        weight_decay=0.01,
+        
+        # Use gradient checkpointing to save memory (per instructions)
+        gradient_checkpointing=True,
+        
+        logging_steps=10,
+        save_strategy="epoch", # Save at the end of each epoch
+        load_best_model_at_end=False,
+    )
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=tokenized_train_data,
+    )
+    trainer.train()
+    model.save_pretrained(output_dir)
+    print(f"Model saved to {output_dir}")
     test_model(output_dir)
+
+
 
 
 def test_model(ckpt_path: str):
