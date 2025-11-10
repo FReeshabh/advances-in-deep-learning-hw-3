@@ -1,0 +1,41 @@
+# Operating System and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyd
+.Python/
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Data and Models
+data/
+datasets/
+models/
+checkpoints/
+*.pt  # PyTorch model files
+*.h5  # Keras/TensorFlow model files
+*.onnx # ONNX model files
+
+# Logs and Outputs
+logs/
+output/
+results/
+tensorboard/
+*.log
+*.csv  # If these are generated outputs and not source data
+*.pkl  # Pickled objects, often used for temporary data or preprocessed features
+
+# Jupyter Notebook specific
+.ipynb_checkpoints/
+
+# Environment specific
+.env
+*.env
