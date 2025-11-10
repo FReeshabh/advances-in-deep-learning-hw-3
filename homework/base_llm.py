@@ -13,6 +13,7 @@ class BaseLLM:
         self.tokenizer = AutoTokenizer.from_pretrained(checkpoint)
         self.model = AutoModelForCausalLM.from_pretrained(checkpoint).to(device)
         self.device = device
+        self.tokenizer.padding_side = "left"
 
     def format_prompt(self, question: str) -> str:
         """
@@ -43,7 +44,17 @@ class BaseLLM:
         - decode the outputs with self.tokenizer.decode
 
         """
-        return self.batched_generate([prompt])[0]
+        tokenized_input = self.tokenizer(
+            prompt,
+            return_tensors="pt",
+            padding=True,
+        ).to(self.device)
+        input_length = tokenized_input["input_ids"].shape[1]
+        outputs = self.model.generate(
+            **tokenized_input,
+        )
+        generated_tokens = outputs[:, input_length:]
+        return self.tokenizer.decode(generated_tokens[0], skip_special_tokens=True)
 
     @overload
     def batched_generate(
@@ -105,7 +116,51 @@ class BaseLLM:
                 for r in self.batched_generate(prompts[idx : idx + micro_batch_size], num_return_sequences, temperature)
             ]
 
-        raise NotImplementedError()
+        # Tokenize 
+        tokenized_input = self.tokenizer(
+            prompts,
+            return_tensors="pt",
+            padding=True,
+        ).to(self.device)
+        input_length = tokenized_input["input_ids"].shape[1]
+
+        n_return = num_return_sequences if num_return_sequences is not None else 1
+        do_sample = temperature > 0.0
+
+        gen_kwargs = {
+            "max_new_tokens": 50,
+            "do_sample": do_sample,
+            "num_return_sequences": n_return,
+            "eos_token_id": self.tokenizer.eos_token_id,
+            "pad_token_id": self.tokenizer.pad_token_id,
+        }
+
+        if do_sample:
+            gen_kwargs["temperature"] = temperature
+        
+        with torch.no_grad():
+            outputs = self.model.generate(
+                **tokenized_input,  # Unpack dict directly (input_ids, attention_mask)
+                **gen_kwargs          # Unpack generation settings
+            )
+        generated_tokens = outputs[:, input_length:]
+        decoded_outputs = self.tokenizer.batch_decode(
+            generated_tokens, 
+            skip_special_tokens=True
+        )
+        if num_return_sequences is None:
+            return decoded_outputs
+        else:
+            # We want list[list[str]]
+            # Group the flat list into chunks of size n_return
+            return [
+                decoded_outputs[i : i + n_return]
+                for i in range(0, len(decoded_outputs), n_return)
+            ]
+
+
+
+        
 
     def answer(self, *questions) -> list[float]:
         """
