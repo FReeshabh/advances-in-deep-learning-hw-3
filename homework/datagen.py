@@ -13,10 +13,28 @@ def generate_dataset(output_json: str, oversample: int = 10, temperature: float 
     except:
         model = CoTModel()
     
+    output_path = Path(output_json)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    
+    # Load existing data if checkpoint exists
     rft_data = []
+    processed_questions = set()
+    if output_path.exists():
+        try:
+            with open(output_path, 'r') as f:
+                rft_data = json.load(f)
+                processed_questions = {item[0] for item in rft_data}
+            print(f"Resuming: Found {len(rft_data)} existing entries")
+        except (json.JSONDecodeError, IndexError):
+            print("Warning: Could not load checkpoint, starting fresh")
 
     for item in tqdm(dataset, desc="Generating RFT dataset"):
         question, correct_answer = item[0], item[1]
+        
+        # Skip if already processed
+        if question in processed_questions:
+            continue
+        
         # Use the CoT chat prompt tt's just running reao elicit step-by-step reasoning and <answer> tags
         # 1. Create the full, correct prompt string. (You were right!)
         prompt = model.format_prompt(question)
@@ -48,10 +66,13 @@ def generate_dataset(output_json: str, oversample: int = 10, temperature: float 
             parsed_answer = model.parse_answer(completion)
             if not math.isnan(parsed_answer) and is_answer_valid(parsed_answer, correct_answer):
                 rft_data.append([question, correct_answer, completion])
+                processed_questions.add(question)
+                # Save checkpoint after each successful addition
+                with open(output_path, 'w') as f:
+                    json.dump(rft_data, f, indent=2)
                 break
     
-    output_path = Path(output_json)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+    # Final save
     with open(output_path, 'w') as f:
         json.dump(rft_data, f, indent=2)
 
