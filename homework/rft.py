@@ -41,12 +41,17 @@ def train_model(
     )
 
     model = get_peft_model(base_model.model, config)
+    # model.enable_input_require_grads()
+    # model.print_trainable_parameters()
+    # model.print_trainable_parameters()
+
+    # if torch.cuda.is_available():
     model.enable_input_require_grads()
 
     print("Trainable parameters:")
     model.print_trainable_parameters()
 
-    train_data = Dataset("rft")
+    train_data = Dataset("rft") #the dataset just generated from datagen.py
     tokenizer = base_model.tokenizer
 
     def format_example(prompt: str, correct_answer: float, completion: str):
@@ -59,17 +64,17 @@ def train_model(
 
     training_args = TrainingArguments(
         output_dir=output_dir,
-        logging_dir=kwargs.pop("logging_dir", output_dir),
-        report_to=kwargs.pop("report_to", "tensorboard"),
-        per_device_train_batch_size=kwargs.pop("per_device_train_batch_size", 32),
-        num_train_epochs=kwargs.pop("num_train_epochs", 5),
-        learning_rate=kwargs.pop("learning_rate", 2e-4),
-        warmup_steps=kwargs.pop("warmup_steps", 100),
-        weight_decay=kwargs.pop("weight_decay", 0.01),
-        gradient_checkpointing=kwargs.pop("gradient_checkpointing", True),
-        logging_steps=kwargs.pop("logging_steps", 10),
-        save_strategy=kwargs.pop("save_strategy", "epoch"),
-        load_best_model_at_end=kwargs.pop("load_best_model_at_end", False),
+        logging_dir=output_dir,
+        report_to="tensorboard",
+        per_device_train_batch_size=32,
+        num_train_epochs=5,
+        learning_rate=2e-4,
+        warmup_steps=100,
+        weight_decay=0.01,
+        gradient_checkpointing=True,
+        logging_steps=10,
+        save_strategy="epoch",
+        load_best_model_at_end=False,
         **kwargs,
     )
 
