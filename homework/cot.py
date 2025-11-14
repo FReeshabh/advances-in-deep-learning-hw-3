@@ -43,28 +43,32 @@ class CoTModel(BaseLLM):
             "2. 300 / 100 = 3.\n"
             "<answer>3</answer>"
         )
+        user_5 = "How many MB are there per 9 GB?"
+        asst_5 = (
+            "1. 1 GB = 1000 MB.\n"
+            "2. 9 * 1000 = 9000.\n"
+            "<answer>9000</answer>"
+        )
 
         chat_messages = [
             {"role": "system", "content": system_prompt},
             
-            # Example 1
             {"role": "user", "content": user_1},
             {"role": "assistant", "content": asst_1},
             
-            # Example 2
             {"role": "user", "content": user_2},
             {"role": "assistant", "content": asst_2},
             
-            # Example 3
             {"role": "user", "content": user_3},
             {"role": "assistant", "content": asst_3},
 
             {"role": "user", "content": user_4},
             {"role": "assistant", "content": asst_4},
 
-            
-            
-            # The *actual* question from the user
+            {"role": "user", "content": user_5},
+            {"role": "assistant", "content": asst_5},
+
+
             {"role": "user", "content": question}
         ]
 
