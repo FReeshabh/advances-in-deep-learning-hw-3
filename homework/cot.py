@@ -9,9 +9,10 @@ class CoTModel(BaseLLM):
         """
         system_prompt = (
             "You are a helpful assistant for unit conversions. Be concise. "
+            "You must follow the SI (decimal) standard: 1 KB = 1000 bytes, 1 MB = 1000 KB, 1 GB = 1000 MB. "
             "Think step-by-step and then provide the final numerical answer "
             "enclosed in <answer></answer> tags."
-        )
+)
 
 # Example 1: m -> km (division)
         user_1 = "How many kilometers are in 2500 meters?"
