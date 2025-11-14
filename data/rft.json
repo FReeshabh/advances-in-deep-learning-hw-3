@@ -1283,9 +1283,7 @@
     "How do we translate 4 pound into gram?",
     1814.36948,
     "1. 1 pound = 453.592 grams.\n2. 4 * 453.592 = 1814.368.\n<answer>1814.368</answer>"
-  ]
-]
-[
+  ],
   [
     "Can you change 2 hour to its equivalent in min?",
     120.0,
