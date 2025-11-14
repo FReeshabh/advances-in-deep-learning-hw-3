@@ -25,6 +25,7 @@ def load() -> BaseLLM:
 
 def train_model(
     output_dir: str,
+    num_train_epochs: int = 10,
     **kwargs,
 ):
     base_model = BaseLLM()
@@ -67,7 +68,7 @@ def train_model(
         logging_dir=output_dir,
         report_to="tensorboard",
         per_device_train_batch_size=32,
-        num_train_epochs=5,
+        num_train_epochs=num_train_epochs,
         learning_rate=2e-4,
         warmup_steps=100,
         weight_decay=0.01,
