@@ -3893,5 +3893,730 @@
     "Could you convert 5 yd to its corresponding value in mm?",
     4572.0,
     "1. 1 yard = 3 feet.\n2. 1 foot = 30 centimeters.\n3. 1 yard = 3 feet * 30 cm / foot = 90 cm.\n4. 5 yards * 90 cm / yard = 450 cm.\n5. 1 cm = 10 millimeters.\n6. 450 cm = 450 * 10 mm = 4500 mm.\n<answer>4500</answer>"
+  ],
+  [
+    "Convert the measurement of 2 B into bit.",
+    16.0,
+    "1. 1 byte (B) = 8 bits.\n2. 2 * 8 = 16.\n<answer>16</answer>"
+  ],
+  [
+    "What does 8 KB equal in byte terms?",
+    8000.0,
+    "1. 1 KB = 1000 bytes.\n2. 8 KB = 8 * 1000 = 8000 bytes.\n<answer>8000</answer>"
+  ],
+  [
+    "Can you provide the conversion value from B to bit for 4 units?",
+    32.0,
+    "1. 1 byte = 8 bits.\n2. 4 x 8 = 32.\n<answer>32</answer>"
+  ],
+  [
+    "What does 6 KB equal in bit terms?",
+    48000.0,
+    "1. 1 kilobyte (KB) = 1000 bytes (B).\n2. 1 byte (B) = 8 bits (b).\n3. 6 KB * 1000 = 6000 bytes.\n4. 6000 bytes * 8 bits/byte = 48000 bits.\n<answer>48000</answer>"
+  ],
+  [
+    "Could you provide the value of 4 KB in byte?",
+    4000.0,
+    "1. 1 KB = 1000 bytes.\n2. 4 * 1000 = 4000.\n<answer>4000</answer>"
+  ],
+  [
+    "What is the equivalent of 2 bit in byte?",
+    0.25,
+    "1. 1 byte = 8 bits.\n2. 2 / 8 = 0.25.\n<answer>0.25</answer>"
+  ],
+  [
+    "Convert the measurement of 8 KB into byte.",
+    8000.0,
+    "1. 1 KB = 1000 bytes.\n2. 8 KB * 1000 = 8000 bytes.\n<answer>8000</answer>"
+  ],
+  [
+    "What is 9 bit in byte?",
+    1.125,
+    "1. 1 byte = 8 bits.\n2. 9 / 8 = 1.125.\n<answer>1.125</answer>"
+  ],
+  [
+    "Could you give the conversion from bit to B for 6 units?",
+    0.75,
+    "1. 1 byte (B) = 8 bits.\n2. 6 / 8 = 0.75.\n<answer>0.75</answer>"
+  ],
+  [
+    "Express 10 KB as a quantity of byte.",
+    10000.0,
+    "1. 1 KB = 1000 bytes.\n2. 10 KB * 1000 bytes = 10000 bytes.\n<answer>10000</answer>"
+  ],
+  [
+    "Tell me how many B are there in 7 bit.",
+    0.875,
+    "1. 1 byte = 8 bits.\n2. 7 / 8 = 0.875.\n<answer>0.875</answer>"
+  ],
+  [
+    "How many MB are there per 9 GB?",
+    9000.0,
+    "1. 1 GB = 1000 MB.\n2. 9 * 1000 = 9000.\n<answer>9000</answer>"
+  ],
+  [
+    "Could you provide the value of 6 G in MB?",
+    6000.0,
+    "1. 1 GB = 1000 MB.\n2. 6 GB * 1000 = 6000 MB.\n<answer>6000</answer>"
+  ],
+  [
+    "Can you provide the conversion value from KB to bit for 10 units?",
+    80000.0,
+    "1. 1 KB = 1000 bytes.\n2. 1 byte = 8 bits.\n3. 10 KB = 10 * 1000 = 10000 bytes.\n4. 10000 bytes = 10000 * 8 = 80000 bits.\n<answer>80000</answer>"
+  ],
+  [
+    "Convert 4 kB to bit?",
+    32000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 4 kilobytes = 4 * 1000 = 4000 bytes.\n3. 1 byte = 8 bits.\n4. 4000 bytes = 4000 * 8 = 32000 bits.\n<answer>32000</answer>"
+  ],
+  [
+    "What is the equivalent of 1 GB in MB?",
+    1000.0,
+    "1. 1 gigabyte (GB) = 1000 megabytes (MB).\n2. Therefore, 1 GB = 1000 MB.\n<answer>1000</answer>"
+  ],
+  [
+    "Tell me how many bit are there in 7 B.",
+    56.0,
+    "1. 1 byte = 8 bits.\n2. 7 bytes * 8 bits/byte = 56 bits.\n<answer>56</answer>"
+  ],
+  [
+    "What is the measurement of 8 MB when converted into kB?",
+    8000.0,
+    "1. 1 megabyte = 1000 kilobytes.\n2. 8 * 1000 = 8000.\n<answer>8000</answer>"
+  ],
+  [
+    "How many MB are there per 3 G?",
+    3000.0,
+    "1. 1 GB = 1000 MB.\n2. 3 * 1000 = 3000.\n<answer>3000</answer>"
+  ],
+  [
+    "How does 10 B measure up in terms of bit?",
+    80.0,
+    "1. 1 byte = 8 bits.\n2. 10 bytes = 10 * 8 = 80 bits.\n<answer>80</answer>"
+  ],
+  [
+    "How many byte are there per 2 KB?",
+    2000.0,
+    "1. 1 KB = 1000 bytes.\n2. 2 KB * 1000 bytes/KB = 2000 bytes.\n<answer>2000</answer>"
+  ],
+  [
+    "Can you provide the conversion value from kB to byte for 4 units?",
+    4000.0,
+    "1. 1 kilobyte (kB) = 1000 bytes.\n2. 4 * 1000 = 4000.\n<answer>4000</answer>"
+  ],
+  [
+    "Express 8 GB as a quantity of MB.",
+    8000.0,
+    "1. 1 GB = 1000 MB.\n2. 8 * 1000 = 8000.\n<answer>8000</answer>"
+  ],
+  [
+    "How does 2 kB measure up in terms of B?",
+    2000.0,
+    "1. 1 byte = 1 bit.\n2. 1 kilobyte (KB) = 1000 bytes.\n3. 2 * 1000 = 2000.\n<answer>2000</answer>"
+  ],
+  [
+    "What is the conversion of 10 bit to byte?",
+    1.25,
+    "1. 1 byte = 8 bits.\n2. 10 / 8 = 1.25.\n<answer>1.25</answer>"
+  ],
+  [
+    "How do we translate 3 kB into bit?",
+    24000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 3 kB * 1000 bytes = 3000 bytes.\n3. 3000 bits = 3000 * 8 = 24000 bits.\n<answer>24000</answer>"
+  ],
+  [
+    "What is 1 B in bit?",
+    8.0,
+    "1. 1 byte = 8 bits.\n2. 1 bit = 0.125 bytes.\n3. 1 byte = 8 bits.\n4. 1 B = 1 * 8 = 8 bits.\n<answer>8</answer>"
+  ],
+  [
+    "Please convert 2 bit into byte.",
+    0.25,
+    "1. 1 byte = 8 bits.\n2. 2 / 8 = 0.25.\n<answer>0.25</answer>"
+  ],
+  [
+    "Please convert 6 byte into bit.",
+    48.0,
+    "1. 1 byte = 8 bits.\n2. 6 * 8 = 48.\n<answer>48</answer>"
+  ],
+  [
+    "How do we translate 8 M into kB?",
+    8000.0,
+    "1. 1 kilobyte (KB) = 1000 bytes.\n2. 8 * 1000 = 8000.\n<answer>8000</answer>"
+  ],
+  [
+    "What does 9 kB equal in byte terms?",
+    9000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 9 * 1000 = 9000.\n<answer>9000</answer>"
+  ],
+  [
+    "Could you convert 8 bit to its corresponding value in byte?",
+    1.0,
+    "1. 1 byte = 8 bits.\n2. 8 bits = 1 byte.\n<answer>1</answer>"
+  ],
+  [
+    "How do we translate 5 kB into B?",
+    5000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 5 * 1000 = 5000.\n<answer>5000</answer>"
+  ],
+  [
+    "Please convert 1 G into MB.",
+    1000.0,
+    "1. 1 GB (gigabyte) = 1000 MB (megabytes).\n2. 1 GB = 1000 MB.\n<answer>1000</answer>"
+  ],
+  [
+    "Express 8 bit as a quantity of byte.",
+    1.0,
+    "1. 1 byte = 8 bits.\n2. 8 / 8 = 1.\n<answer>1</answer>"
+  ],
+  [
+    "Please convert 1 KB into B.",
+    1000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 1000 / 1 = 1000.\n<answer>1000</answer>"
+  ],
+  [
+    "How does 7 MB measure up in terms of kB?",
+    7000.0,
+    "1. 1000 bytes = 1 kilobyte.\n2. 7 * 1000 = 7000.\n<answer>7000</answer>"
+  ],
+  [
+    "Could you convert 8 kB to its corresponding value in B?",
+    8000.0,
+    "1. 1 kilobyte (KB) = 1000 bytes.\n2. 8 * 1000 = 8000.\n<answer>8000</answer>"
+  ],
+  [
+    "Convert 7 bit to byte?",
+    0.875,
+    "1. 1 byte = 8 bits.\n2. 7 / 8 = 0.875.\n<answer>0.875</answer>"
+  ],
+  [
+    "Convert the measurement of 7 M into kB.",
+    7000.0,
+    "1. 1 megabyte (MB) = 1000 kilobytes (KB).\n2. 7 * 1000 = 7000.\n<answer>7000</answer>"
+  ],
+  [
+    "What is the conversion from bit to B for 3 units?",
+    0.375,
+    "1. 1 byte = 8 bits.\n2. 3 / 8 = 0.375.\n<answer>0.375</answer>"
+  ],
+  [
+    "Can you change 10 byte to its equivalent in bit?",
+    80.0,
+    "1. 1 byte = 8 bits.\n2. 10 bytes * 8 bits/byte = 80 bits.\n<answer>80</answer>"
+  ],
+  [
+    "What is 9 kB in bit?",
+    72000.0,
+    "1. 1 KB = 1000 bytes.\n2. 1 byte = 8 bits.\n3. 9 KB * 1000 = 9000 bytes.\n4. 9000 bytes * 8 bits = 72000 bits.\n<answer>72000</answer>"
+  ],
+  [
+    "Convert the measurement of 7 MB into kB.",
+    7000.0,
+    "1. 1 MB = 1000 KB.\n2. 7 * 1000 = 7000.\n<answer>7000</answer>"
+  ],
+  [
+    "Convert 5 GB to M?",
+    5000.0,
+    "1. 1 GB = 1000 MB.\n2. 5 * 1000 = 5000.\n<answer>5000</answer>"
+  ],
+  [
+    "Express 10 KB as a quantity of bit.",
+    80000.0,
+    "1. 1 KB = 1000 bytes.\n2. 10 KB = 10 * 1000 = 10000 bytes.\n3. 1 byte = 8 bits.\n4. 10000 bytes = 10000 * 8 = 80000 bits.\n<answer>80000</answer>"
+  ],
+  [
+    "What does 2 B equal in bit terms?",
+    16.0,
+    "1. 1 byte = 8 bits.\n2. 2 bytes = 2 * 8 = 16 bits.\n<answer>16</answer>"
+  ],
+  [
+    "How do we translate 10 meter into in?",
+    393.70078740157476,
+    "1. 100 centimeters = 1 meter.\n2. 1000 millimeters = 1 meter.\n3. 1 meter = 39.37 inches.\n4. Therefore, 10 meter = 10 * 39.37 = 393.7 inches.\n<answer>393.7</answer>"
+  ],
+  [
+    "Can you change 3 bit to its equivalent in byte?",
+    0.375,
+    "1. 1 byte = 8 bits.\n2. 3 / 8 = 0.375.\n<answer>0.375</answer>"
+  ],
+  [
+    "How do we translate 10 bit into byte?",
+    1.25,
+    "1. 1 byte = 8 bits.\n2. 10 bit / 8 bit = 1.25.\n<answer>1.25</answer>"
+  ],
+  [
+    "Could you convert 9 M to its corresponding value in KB?",
+    9000.0,
+    "1. 1000 bytes = 1 kilobyte.\n2. 9 * 1000 = 9000.\n<answer>9000</answer>"
+  ],
+  [
+    "Could you convert 6 KB to its corresponding value in B?",
+    6000.0,
+    "1. 1 KB = 1000 bytes.\n2. 6 KB = 6 * 1000 = 6000 bytes.\n<answer>6000</answer>"
+  ],
+  [
+    "Please convert 2 byte into bit.",
+    16.0,
+    "1. 1 byte = 8 bits.\n2. 2 * 8 = 16 bits.\n<answer>16</answer>"
+  ],
+  [
+    "Please convert 2 B into bit.",
+    16.0,
+    "1. 1 byte = 8 bits.\n2. 2 bytes = 2 * 8 = 16 bits.\n<answer>16</answer>"
+  ],
+  [
+    "How does 4 GB measure up in terms of MB?",
+    4000.0,
+    "1. 1 GB = 1000 MB.\n2. 4 * 1000 = 4000.\n<answer>4000</answer>"
+  ],
+  [
+    "How do we express 7 KB in terms of B?",
+    7000.0,
+    "1. 1 KB = 1000 bytes.\n2. 7 KB = 7 * 1000 = 7000 bytes.\n<answer>7000</answer>"
+  ],
+  [
+    "How do we express 10 MB in terms of KB?",
+    10000.0,
+    "1. 1000 KB = 1 MB.\n2. 10 MB * 1000 KB / MB = 10000 KB.\n<answer>10000</answer>"
+  ],
+  [
+    "What is the measurement of 4 kB when converted into byte?",
+    4000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 4 * 1000 = 4000.\n<answer>4000</answer>"
+  ],
+  [
+    "Could you provide the value of 9 GB in MB?",
+    9000.0,
+    "1. 1 gigabyte = 1000 megabytes.\n2. 9 * 1000 = 9000.\n<answer>9000</answer>"
+  ],
+  [
+    "What is 1 KB in bit?",
+    8000.0,
+    "1. 1 KB = 1000 bytes.\n2. 1 byte = 8 bits.\n3. 1000 * 8 = 8000.\n<answer>8000</answer>"
+  ],
+  [
+    "What is 5 bit in byte?",
+    0.625,
+    "1. 1 byte = 8 bits.\n2. 5 / 8 = 0.625.\n<answer>0.625</answer>"
+  ],
+  [
+    "Express 6 GB as a quantity of MB.",
+    6000.0,
+    "1. 1 GB = 1000 MB.\n2. 6 * 1000 = 6000.\n<answer>6000</answer>"
+  ],
+  [
+    "Express 2 G as a quantity of MB.",
+    2000.0,
+    "1. 1 GB = 1000 MB.\n2. 2 * 1000 = 2000.\n<answer>2000</answer>"
+  ],
+  [
+    "How do we translate 9 B into bit?",
+    72.0,
+    "1. 1 byte = 8 bits.\n2. 9 bytes = 9 * 8 = 72 bits.\n<answer>72</answer>"
+  ],
+  [
+    "Convert the measurement of 9 decades into days.",
+    32871.7978903125,
+    "1. 1 decade = 10 years.\n2. 9 decades * 10 years = 90 years.\n3. 1 year = 365 days.\n4. 90 years * 365 days = 32850 days.\n<answer>32850</answer>"
+  ],
+  [
+    "How do we translate 10 KB into byte?",
+    10000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 10 * 1000 = 10000.\n<answer>10000</answer>"
+  ],
+  [
+    "Tell me how many kB are there in 1 M.",
+    1000.0,
+    "1. 1 megabyte (MB) = 1000 kilobytes (KB).\n2. 1 * 1000 = 1000.\n<answer>1000</answer>"
+  ],
+  [
+    "Convert the measurement of 5 M into kB.",
+    5000.0,
+    "1. 1000 bytes = 1 kilobyte (KB).\n2. 5 * 1000 = 5000.\n<answer>5000</answer>"
+  ],
+  [
+    "Can you change 4 MB to its equivalent in kB?",
+    4000.0,
+    "1. 1000 bytes = 1 kilobyte.\n2. 4 megabytes = 4 * 1000 * 1000 = 4000000 bytes.\n3. 4000000 / 1000 = 4000.\n<answer>4000</answer>"
+  ],
+  [
+    "Convert the measurement of 3 bit into B.",
+    0.375,
+    "1. 1 byte = 8 bits.\n2. 3 / 8 = 0.375.\n<answer>0.375</answer>"
+  ],
+  [
+    "Can you change 7 bit to its equivalent in byte?",
+    0.875,
+    "1. 1 byte = 8 bits.\n2. 7 bits / 8 = 0.875.\n<answer>0.875</answer>"
+  ],
+  [
+    "Convert the measurement of 5 kB into bit.",
+    40000.0,
+    "1. 1 KB = 1000 bytes.\n2. 5 KB = 5 * 1000 bytes.\n3. 5 KB = 5000 bytes.\n4. 1 byte = 8 bits.\n5. 5000 bytes * 8 bits/byte = 40000 bits.\n<answer>40000</answer>"
+  ],
+  [
+    "Could you provide the value of 4 G in MB?",
+    4000.0,
+    "1. 1 GB = 1000 MB.\n2. 4 GB * 1000 = 4000 MB.\n<answer>4000</answer>"
+  ],
+  [
+    "How do we translate 8 kB into B?",
+    8000.0,
+    "1. 1 kilobyte (KB) = 1000 bytes.\n2. 8 * 1000 = 8000.\n<answer>8000</answer>"
+  ],
+  [
+    "What is the equivalent of 7 KB in bit?",
+    56000.0,
+    "1. 1 KB = 1000 bytes.\n2. 1 byte = 8 bits.\n3. 7 KB = 7 * 1000 * 8 = 56000 bits.\n<answer>56000</answer>"
+  ],
+  [
+    "What does 4 B equal in bit terms?",
+    32.0,
+    "1. 1 byte = 8 bits.\n2. 4 * 8 = 32.\n<answer>32</answer>"
+  ],
+  [
+    "Convert 9 KB to B?",
+    9000.0,
+    "1. 1 KB = 1000 bytes.\n2. 9 * 1000 = 9000 bytes.\n<answer>9000</answer>"
+  ],
+  [
+    "How much is 7 B when converted to bit?",
+    56.0,
+    "1. 1 byte = 8 bits.\n2. 7 * 8 = 56.\n<answer>56</answer>"
+  ],
+  [
+    "What is the equivalent of 1 B in bit?",
+    8.0,
+    "1. 1 bit = 1 binary digit.\n2. 1 byte = 8 bits.\n3. 1 byte = 8 bits.\n<answer>8</answer>"
+  ],
+  [
+    "Tell me how many B are there in 9 KB.",
+    9000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 9 * 1000 = 9000.\n<answer>9000</answer>"
+  ],
+  [
+    "How do we express 2 ton in terms of pound?",
+    4409.245243697552,
+    "1. 1 ton = 1000 kg = 1000 * 2.20462 kg = 2204.62 pounds.\n2. 2 ton = 2 * 2204.62 pounds = 4409.24 pounds.\n<answer>4409.24</answer>"
+  ],
+  [
+    "How many B make up 1 bit?",
+    0.125,
+    "1. 1 byte = 8 bits.\n2. 1 / 8 = 0.125.\n<answer>0.125</answer>"
+  ],
+  [
+    "Please convert 9 kB into byte.",
+    9000.0,
+    "1. 1 kilobyte (KB) = 1000 bytes.\n2. 9 * 1000 = 9000.\n<answer>9000</answer>"
+  ],
+  [
+    "What does 1 bit equal in B terms?",
+    0.125,
+    "1. 1 byte = 8 bits.\n2. 1 bit = 1 / 8 = 0.125 bytes.\n<answer>0.125</answer>"
+  ],
+  [
+    "How many bit make up 3 byte?",
+    24.0,
+    "1. 1 byte = 8 bits.\n2. 3 * 8 = 24.\n<answer>24</answer>"
+  ],
+  [
+    "How does 2 byte measure up in terms of bit?",
+    16.0,
+    "1. 1 byte = 8 bits.\n2. 2 bytes = 2 * 8 = 16 bits.\n<answer>16</answer>"
+  ],
+  [
+    "How does 3 kB measure up in terms of bit?",
+    24000.0,
+    "1. 1 kilobyte (KB) = 1000 bytes.\n2. 3 * 1000 = 3000 bytes.\n3. 1 byte = 8 bits.\n4. 3000 bytes * 8 bits/byte = 24000 bits.\n<answer>24000</answer>"
+  ],
+  [
+    "What is the conversion from bit to byte for 3 units?",
+    0.375,
+    "1. 1 byte = 8 bits.\n2. 3 / 8 = 0.375.\n<answer>0.375</answer>"
+  ],
+  [
+    "How many KB make up 8 M?",
+    8000.0,
+    "1. 1 megabyte = 1000 kilobytes.\n2. 8 megabytes * 1000 kilobytes/megabyte = 8000 kilobytes.\n<answer>8000</answer>"
+  ],
+  [
+    "How does 6 M measure up in terms of kB?",
+    6000.0,
+    "1. 1 kilobyte (kB) = 1000 bytes.\n2. 6 kilobytes = 6 * 1000 = 6000 bytes.\n<answer>6000</answer>"
+  ],
+  [
+    "Can you provide the conversion value from KB to B for 1 units?",
+    1000.0,
+    "1. 1 kilobyte = 1000 bytes.\n<answer>1000</answer>"
+  ],
+  [
+    "How many B are there per 10 bit?",
+    1.25,
+    "1. 1 byte = 8 bits.\n2. 10 bits / 8 = 1.25.\n<answer>1.25</answer>"
+  ],
+  [
+    "How many B are there per 9 bit?",
+    1.125,
+    "1. 1 byte = 8 bits.\n2. 9 / 8 = 1.125.\n<answer>1.125</answer>"
+  ],
+  [
+    "Convert the measurement of 1 KB into byte.",
+    1000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 1000 / 1 = 1000.\n<answer>1000</answer>"
+  ],
+  [
+    "How many KB make up 4 MB?",
+    4000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 1 megabyte = 1000 kilobytes.\n3. 1 MB = 1000 KB.\n4. 4 MB * 1000 KB / 1 MB = 4000 KB.\n<answer>4000</answer>"
+  ],
+  [
+    "Tell me how many MB are there in 5 G.",
+    5000.0,
+    "1. 1 gigabyte (GB) = 1000 megabytes (MB).\n2. 5 * 1000 = 5000.\n<answer>5000</answer>"
+  ],
+  [
+    "What does 7 ft/s equal in mph terms?",
+    4.772727272727273,
+    "1. 1 foot = 0.3048 meters.\n2. 7 ft/s * 0.3048 m/ft = 2.1088 m/s.\n3. To convert m/s to mph: 2.1088 m/s * 2.2369 mph/m/s \u2248 4.9999 mph.\n<answer>4.9999</answer>"
+  ],
+  [
+    "Can you change 4 M to its equivalent in KB?",
+    4000.0,
+    "1. 1000 bytes = 1 kilobyte.\n2. 4 * 1000 = 4000.\n<answer>4000</answer>"
+  ],
+  [
+    "Can you provide the conversion value from B to bit for 8 units?",
+    64.0,
+    "1. 1 byte = 8 bits.\n2. 8 units * 1 byte/unit = 8 bytes.\n3. 8 bytes * 8 bits/byte = 64 bits.\n<answer>64</answer>"
+  ],
+  [
+    "Express 5 KB as a quantity of bit.",
+    40000.0,
+    "1. 1 KB = 1000 bytes.\n2. 5 KB = 5 * 1000 = 5000 bytes.\n3. 1 byte = 8 bits.\n4. 5000 bytes * 8 bits/byte = 40000 bits.\n<answer>40000</answer>"
+  ],
+  [
+    "How many bit is 9 KB?",
+    72000.0,
+    "1. 1 kilobyte (KB) = 1000 bytes.\n2. 1 byte = 8 bits.\n3. 9 KB * 1000 = 9000 bytes.\n4. 9000 bytes * 8 bits/byte = 72000 bits.\n<answer>72000</answer>"
+  ],
+  [
+    "How do we translate 2 M into KB?",
+    2000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 2 * 1000 = 2000 bytes.\n<answer>2000</answer>"
+  ],
+  [
+    "Convert 6 bit to B?",
+    0.75,
+    "1. 1 byte = 8 bits.\n2. 6 / 8 = 0.75.\n<answer>0.75</answer>"
+  ],
+  [
+    "How do we translate 4 M into kB?",
+    4000.0,
+    "1. 1 MegaByte = 1000 kilobytes.\n2. 4 * 1000 = 4000.\n<answer>4000</answer>"
+  ],
+  [
+    "Can you provide the conversion value from G to MB for 4 units?",
+    4000.0,
+    "1. 1000 MB = 1 GB.\n2. 1 GB = 1000 MB.\n3. 4 * 1000 MB = 4000 MB.\n<answer>4000</answer>"
+  ],
+  [
+    "Can you change 1 MB to its equivalent in kB?",
+    1000.0,
+    "1. 1 megabyte = 1000 kilobytes.\n2. 1 MB = 1000 kB.\n<answer>1000</answer>"
+  ],
+  [
+    "Convert 2 MB to KB?",
+    2000.0,
+    "1. 1000 KB = 1 MB.\n2. 2 * 1000 = 2000.\n<answer>2000</answer>"
+  ],
+  [
+    "Could you provide the value of 7 week in h?",
+    1176.0,
+    "1. There is no standard conversion from weeks to hours.\n2. However, assuming a standard week has 7 days and a day has 24 hours:\n   - 1 week = 7 days * 24 hours/day = 168 hours.\n3. 7 weeks would be:\n   7 * 168 = 1176 hours.\n<answer>1176</answer>"
+  ],
+  [
+    "Could you give the conversion from byte to bit for 2 units?",
+    16.0,
+    "1. 1 byte = 8 bits.\n2. 2 * 8 = 16.\n<answer>16</answer>"
+  ],
+  [
+    "What is 10 KB in byte?",
+    10000.0,
+    "1. 1 KB = 1000 bytes.\n2. 10 KB * 1000 = 10000 bytes.\n<answer>10000</answer>"
+  ],
+  [
+    "How do we express 6 KB in terms of byte?",
+    6000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 6 * 1000 = 6000 bytes.\n<answer>6000</answer>"
+  ],
+  [
+    "How do we express 4 B in terms of bit?",
+    32.0,
+    "1. 1 byte = 8 bits.\n2. 4 * 8 = 32.\n<answer>32</answer>"
+  ],
+  [
+    "Can you change 7 kB to its equivalent in bit?",
+    56000.0,
+    "1. 1 KB = 1000 bytes.\n2. 1 byte = 8 bits.\n3. 7 KB = 7 * 1000 * 8 = 56000 bits.\n<answer>56000</answer>"
+  ],
+  [
+    "Please convert 6 bit into byte.",
+    0.75,
+    "1. 1 byte = 8 bits.\n2. 6 / 8 = 0.75.\n<answer>0.75</answer>"
+  ],
+  [
+    "Express 2 kB as a quantity of B.",
+    2000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 2 * 1000 = 2000 bytes.\n<answer>2000</answer>"
+  ],
+  [
+    "What is the conversion of 6 KB to byte?",
+    6000.0,
+    "1. 1 KB = 1000 bytes.\n2. 6 KB * 1000 = 6000 bytes.\n<answer>6000</answer>"
+  ],
+  [
+    "Can you change 3 MB to its equivalent in kB?",
+    3000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 3 * 1000 = 3000.\n<answer>3000</answer>"
+  ],
+  [
+    "What is 9 bit in B?",
+    1.125,
+    "1. 1 byte = 8 bits.\n2. 9 bits / 8 = 1.125.\n<answer>1.125</answer>"
+  ],
+  [
+    "Please convert 7 KB into bit.",
+    56000.0,
+    "1. 1 byte = 8 bits.\n2. 1 kilobyte = 1000 bytes, therefore 1 kilobyte = 1000 * 8 = 8000 bits.\n3. 7 kilobytes = 7 * 8000 = 56000 bits.\n<answer>56000</answer>"
+  ],
+  [
+    "Can you change 7 KB to its equivalent in byte?",
+    7000.0,
+    "1. 1 KB = 1000 bytes.\n2. 7 KB * 1000 = 7000 bytes.\n<answer>7000</answer>"
+  ],
+  [
+    "How much is 5 G when converted to MB?",
+    5000.0,
+    "1. 1 gigabyte = 1000 megabytes.\n2. 5 * 1000 = 5000.\n<answer>5000</answer>"
+  ],
+  [
+    "What does 4 GB equal in M terms?",
+    4000.0,
+    "1. 1 GB = 1000 MB.\n2. 4 * 1000 = 4000.\n<answer>4000</answer>"
+  ],
+  [
+    "Convert the measurement of 6 G into MB.",
+    6000.0,
+    "1. 1 GB = 1000 MB.\n2. 6 GB * 1000 MB/GB = 6000 MB.\n<answer>6000</answer>"
+  ],
+  [
+    "Could you convert 2 MB to its corresponding value in kB?",
+    2000.0,
+    "1. 1 MB = 1000 KB.\n2. 2 * 1000 = 2000.\n<answer>2000</answer>"
+  ],
+  [
+    "Can you change 9 KB to its equivalent in bit?",
+    72000.0,
+    "1. 1 KB = 1000 bytes.\n2. 9 KB = 9 * 1000 = 9000 bytes.\n3. 1 byte = 8 bits.\n4. 9000 bytes = 9000 * 8 = 72000 bits.\n<answer>72000</answer>"
+  ],
+  [
+    "What is the measurement of 2 M when converted into KB?",
+    2000.0,
+    "1. 1000 bytes = 1 kilobyte.\n2. 2 * 1000 = 2000.\n<answer>2000</answer>"
+  ],
+  [
+    "Can you change 9 kB to its equivalent in B?",
+    9000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 9 * 1000 = 9000 bytes.\n<answer>9000</answer>"
+  ],
+  [
+    "Could you convert 1 bit to its corresponding value in B?",
+    0.125,
+    "1. 1 bit = 1 byte (8 bits).\n2. 1 byte = 1000 bytes.\n3. 1 bit / 8 = 0.125 bytes.\n<answer>0.125</answer>"
+  ],
+  [
+    "Can you provide the conversion value from KB to bit for 1 units?",
+    8000.0,
+    "1. 1000 bytes = 1 kilobyte (KB).\n2. 1 byte = 8 bits.\n3. 1 KB * 1000 bytes / 1 KB * 8 bits / 1 byte = 8000 bits.\n<answer>8000</answer>"
+  ],
+  [
+    "Express 10 KB as a quantity of B.",
+    10000.0,
+    "1. 1000 bytes = 1 KB.\n2. 10 KB * 1000 bytes/KB = 10000 bytes.\n<answer>10000</answer>"
+  ],
+  [
+    "Could you provide the value of 5 GB in M?",
+    5000.0,
+    "1. 1 GB = 1000 MB.\n2. 5 * 1000 = 5000.\n<answer>5000</answer>"
+  ],
+  [
+    "How do we express 4 GB in terms of MB?",
+    4000.0,
+    "1. 1 GB = 1000 MB.\n2. 4 * 1000 = 4000.\n<answer>4000</answer>"
+  ],
+  [
+    "Please convert 10 century into weeks.",
+    52177.45696874999,
+    "1. 1 century = 1000 years.\n2. 1 year = 52 weeks.\n3. 1000 * 52 = 52000.\n<answer>52000</answer>"
+  ],
+  [
+    "How much is 5 kB when converted to B?",
+    5000.0,
+    "1. 1 KB = 1000 bytes.\n2. 5 KB * 1000 = 5000 bytes.\n<answer>5000</answer>"
+  ],
+  [
+    "What is the equivalent of 4 G in MB?",
+    4000.0,
+    "1. 1 GB = 1000 MB.\n2. 4 GB * 1000 = 4000 MB.\n<answer>4000</answer>"
+  ],
+  [
+    "What is the conversion of 7 G to MB?",
+    7000.0,
+    "1. 1 gigabyte (GB) = 1000 megabytes (MB).\n2. 7 * 1000 = 7000.\n<answer>7000</answer>"
+  ],
+  [
+    "Could you provide the value of 4 B in bit?",
+    32.0,
+    "1. 1 byte = 8 bits.\n2. 4 bytes = 4 * 8 = 32 bits.\n<answer>32</answer>"
+  ],
+  [
+    "How many MB make up 1 GB?",
+    1000.0,
+    "1. 1000 MB = 1 GB.\n2. 1 GB * 1000 = 1000 MB.\n<answer>1000</answer>"
+  ],
+  [
+    "Convert the measurement of 1 m/s into mi/h.",
+    2.2369362920544025,
+    "1. 1 meter per second = 2.23694 miles per hour (1000 m/s * 3.28084 ft/m * 1 mi/1760 ft * 1 hour/3600 seconds)\n2. Approximately 2.24 mi/h.\n<answer>2.24</answer>"
+  ],
+  [
+    "Can you change 3 byte to its equivalent in bit?",
+    24.0,
+    "1. 1 byte = 8 bits.\n2. 3 * 8 = 24.\n<answer>24</answer>"
+  ],
+  [
+    "How do we translate 3 in into cm?",
+    7.62,
+    "1. 1 inch = 2.54 cm.\n2. 3 * 2.54 = 7.62.\n<answer>7.62</answer>"
+  ],
+  [
+    "Convert 9 century to weeks?",
+    46959.71127187499,
+    "1. 1 century = 100 years.\n2. 1 year = 52 weeks.\n3. 9 * 100 = 900 years.\n4. 900 * 52 = 46800 weeks.\n<answer>46800</answer>"
+  ],
+  [
+    "Please convert 1 MB into kB.",
+    1000.0,
+    "1. 1000 bytes = 1 kilobyte.\n2. 1 MB = 1000 kB.\n<answer>1000</answer>"
+  ],
+  [
+    "What is the conversion of 3 kB to byte?",
+    3000.0,
+    "1. 1 kilobyte = 1000 bytes.\n2. 3 * 1000 = 3000.\n<answer>3000</answer>"
+  ],
+  [
+    "Could you provide the value of 6 KB in byte?",
+    6000.0,
+    "1. 1 KB = 1000 bytes.\n2. 6 KB * 1000 = 6000 bytes.\n<answer>6000</answer>"
   ]
 ]
