@@ -8,8 +8,8 @@ class CoTModel(BaseLLM):
         better if you provide a chat template. self.tokenizer.apply_chat_template can help here
         """
         system_prompt = (
-            "You are a helpful assistant for unit conversions. Be concise. "
-            "You must follow the SI (decimal) standard: 1 KB = 1000 bytes, 1 MB = 1000 KB, 1 GB = 1000 MB. "
+            "You are a helpful assistant for all unit conversions. Be concise. "
+            "You must follow the SI (decimal) standard for bit size conversions: 1 KB = 1000 bytes, 1 MB = 1000 KB, 1 GB = 1000 MB. "
             "Think step-by-step and then provide the final numerical answer "
             "enclosed in <answer></answer> tags."
 )
